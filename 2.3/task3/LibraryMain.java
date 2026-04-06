@@ -133,6 +133,15 @@ class Library {
 			}
 		}
 	}
+
+	public boolean check_availability(String title){
+
+		for(Book b : books){
+			if(!(b.get_title().equals(title))) continue;
+			return b.get_availability();
+		}
+		return false;
+	}
 }
 
 class LibraryMain {
@@ -155,12 +164,10 @@ class LibraryMain {
 		utils._log_info("Returning book \"Book 1\"");
 		lib.return_book("Book 1");
 		utils._log_info("Displaying all books in library");
-		lib.display_books();
+		utils._log_info("Borrowing book \"Book 2\"");
+		lib.borrow_book("Book 2");
+		utils._log_info("Checking availability for \"Book 2\"");
+		System.out.printf(lib.check_availability("Book 2") ? 
+				"This book is available%n" : "This book is unavailable%n");
 	}
 }
-
-
-
-
-
-
