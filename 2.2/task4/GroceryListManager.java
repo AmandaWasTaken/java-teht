@@ -105,8 +105,8 @@ class GroceryListManager {
 		gm.displayList();
 
 		System.out.print("\nIs \"Cheese\" in the grocery list? ");
-		boolean has_cheese = checkItem("Cheese");
-		System.out.println(has_cheese ? "True" : "False");
+//		boolean has_cheese = checkItem("Cheese");
+		System.out.println(checkItem("Cheese") ? "True" : "False");
 		System.out.println("Removing \"Cheese\" from the list...");
 		gm.removeItem("Cheese");
 		gm.displayList();
