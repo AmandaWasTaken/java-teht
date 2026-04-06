@@ -8,6 +8,8 @@ class Utils {
 	}
 
 	public void _print_book_info(Book b){
+
+		// ts padding will probably break with long titles or author names lo
 		System.out.printf("Title: %5s%s%n" + "Author: %4s%s%n" + 
 						  "Published:  %d%n",
 		"", b.get_title(), "", b.get_author(), b.get_year());
