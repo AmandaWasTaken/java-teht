@@ -5,7 +5,6 @@ class Fibonacci {
 	
 	static void compute_fibonacci(final int n) {
 		
-		long value = 0;
 		final String filename = "./data/fibonacci.csv";
 
 		try(FileWriter writer = new FileWriter(filename, true)){
@@ -24,7 +23,6 @@ class Fibonacci {
 		}
 		System.out.printf("Wrote %d Fibonacci numbers to %s%n", n, filename);
 	}
-
 
 	public static void main (String[] args) {
 		
