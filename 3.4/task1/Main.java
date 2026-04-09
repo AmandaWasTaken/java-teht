@@ -15,8 +15,7 @@ class Main {
 		int    cnt = 0;
 		URL url    = new URL(file_url);
 
-		try(BufferedReader br = new BufferedReader(
-					new InputStreamReader(url.openStream()))){
+		try(BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()))){
 			
 			String line;
 			br.readLine();
