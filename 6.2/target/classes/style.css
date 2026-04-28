@@ -1,0 +1,21 @@
+.root {
+	-fx-font-size: 24px;
+	-fx-background-color: #e6f1ff;
+}
+
+.labeled {
+	fx-alignment: top-center;
+}
+
+.button {
+	-fx-background-color: lightblue;
+	border: 2px solid black;
+}
+
+.combo-box {
+	-fx-pref-width: 192;
+}
+
+.combo-box-popup > .list-view {
+	-fx-pref-width: 192;
+}
